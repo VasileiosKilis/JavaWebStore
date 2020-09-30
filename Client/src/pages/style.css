@@ -1,0 +1,95 @@
+.topBar {
+    -fx-background-color: #232F3E
+}
+
+.searchBox {
+    -fx-background-color: #ffffff
+}
+
+.productBox{
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-pref-width: 200;
+    -fx-pref-height: 300;
+    -fx-alignment: TOP_CENTER;
+}
+
+.productBox ImageView{
+
+}
+
+.productBox Label{
+    -fx-padding: 10 0 10 0;
+}
+
+.productBox Button{
+    -fx-pref-width: 120;
+    -fx-pref-height: 50;
+
+}
+.productBox HBox{
+    -fx-padding: 10;
+    -fx-spacing: 20;
+    -fx-alignment:CENTER;
+}
+
+.RightBasketBox {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0 10 0 10;
+}
+
+.RightBasketProduct{
+    -fx-alignment: center ;
+}
+
+
+
+.RightBasketBox Button{
+    -fx-alignment: center ;
+    -fx-background-color: #fff;
+    -fx-border-width: 1px;
+    -fx-border-color: #00539F;
+}
+
+.RightBasketBox Button:hover{
+    -fx-border-color: red;
+}
+
+.RightBasketTotal{
+    -fx-border-style: solid inside ;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #CCCCCC;
+    -fx-padding: 10 0 10 0;
+}
+
+.RightBasketTotal .checkout{
+    -fx-background-color: #00539F;
+    -fx-text-fill: #fff;
+}
+
+.RightBasketProductItemBox{
+    -fx-padding: 15 0 15 0;
+    -fx-border-style: solid inside ;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #CCCCCC;
+    -fx-hgap: 10;
+}
+.RightBasketProductItemBox HBox{
+    -fx-alignment: center;
+}
+.RightBasketProductItemBox .text-field {
+    -fx-border-color: #ffffff;
+    -fx-border-style: none;
+    -fx-background-color: #fff;
+    -fx-alignment: center;
+    -fx-pref-width: 20;
+}
+
+.RightBasketProductItem{
+    -fx-spacing: 10;
+}
+
+.RightBasketProductItem Label{
+    -fx-wrap-text: true;
+}
+

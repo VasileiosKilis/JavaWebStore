@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="erciyes.Controllers.loginController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="-178.0" layoutY="22.0" prefHeight="366.0" prefWidth="364.0" style="-fx-background-color: #9c2B27;">
+               <children>
+                  <TextField layoutX="41.0" fx:id="username" layoutY="80.0" prefHeight="34.0" prefWidth="299.0" promptText="Username" style="-fx-background-color: #9c2B27 #9c2B27;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </TextField>
+                  <PasswordField layoutX="42.0" fx:id="pass" layoutY="139.0" prefHeight="34.0" prefWidth="299.0" promptText="Password" style="-fx-background-color: #9c2B27 #9c2B27 #9c2B27 #9c2B27;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </PasswordField>
+                  <Button layoutX="42.0" layoutY="243.0" mnemonicParsing="false" prefHeight="34.0" onMouseClicked="#makeLogin" prefWidth="299.0" style="-fx-background-color: #902525#902525;" text="Sign in" textFill="#f8f8f8" />
+                  <Button layoutX="36.0" layoutY="317.0" mnemonicParsing="false" prefHeight="27.0" onMouseClicked="#registrationPage" prefWidth="330.0" style="-fx-background-color: #9c2B27 #9c2B27;" text="Press here to register" textFill="#10559a" />
+                  <Label layoutX="148.0" layoutY="26.0" prefHeight="31.0" prefWidth="71.0" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <ImageView fitHeight="238.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@fotos/Sale-further-reductions.jpg" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>

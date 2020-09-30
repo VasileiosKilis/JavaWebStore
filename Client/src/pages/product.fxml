@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<GridPane prefHeight="820.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.productController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <children>
+      <HBox alignment="CENTER" fillHeight="false" prefHeight="50.0" spacing="30.0" styleClass="topBar" GridPane.hgrow="ALWAYS">
+         <children>
+            <Label text="WEB SHOP" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region prefHeight="50.0" prefWidth="79.0" />
+            <HBox prefHeight="35.0" prefWidth="390.0" styleClass="searchBox" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField alignment="CENTER" prefHeight="40.0" prefWidth="320.0" HBox.hgrow="ALWAYS" />
+                  <Button prefHeight="40.0" prefWidth="70.0" text="Search" />
+               </children>
+            </HBox>
+            <Region prefHeight="50.0" prefWidth="65.0" />
+            <Button onMouseClicked="#loginPage" text="Login">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox fx:id="submitstars" prefHeight="200.0" prefWidth="100.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.0" minWidth="10.0" prefWidth="429.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="305.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="66.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="501.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../img/img.jpg" />
+                     </image>
+                  </ImageView>
+                  <GridPane hgap="20.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="152.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="157.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Price:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label text="20.5" textFill="#ff0707" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="100.0" prefWidth="309.0" text="Casio G-Shock Men's Watch GA-700UC" wrapText="true" GridPane.columnSpan="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="At the touch of a button, the display can be brightly illuminated in a fashionable colourShock-resistant construction protects against impact and vibrationDisplays the current time in major cities and specific areas around the worldOnce set, the automatic calendar always displays the correct dateTimes can be displayed in either a 12-hour or 24-hour format" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox fillHeight="false" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <children>
+                              <Label text="Quantity" />
+                              <ComboBox prefHeight="22.0" prefWidth="76.0" />
+                              <Button mnemonicParsing="false" text="Add" />
+                              <Button mnemonicParsing="false" text="Buy" />
+                           </children>
+                           <padding>
+                              <Insets top="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <Rating fx:id="stars" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button alignment="TOP_RIGHT" mnemonicParsing="false" text="Submit stars" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>

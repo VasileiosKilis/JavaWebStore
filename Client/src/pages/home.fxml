@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="820.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.homeController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <top>
+        <HBox alignment="CENTER" fillHeight="false" prefHeight="50.0" spacing="30.0" styleClass="topBar" BorderPane.alignment="CENTER">
+            <Label prefHeight="23.0" prefWidth="104.0" text="WEB SHOP" textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+            <Region prefHeight="50.0" prefWidth="79.0" />
+            <HBox prefHeight="35.0" prefWidth="390.0" styleClass="searchBox" HBox.hgrow="ALWAYS">
+                <TextField fx:id="search" alignment="CENTER" prefHeight="35.0" prefWidth="299.0" HBox.hgrow="ALWAYS" />
+                <Button prefHeight="40.0" prefWidth="70.0" text="Search" />
+            </HBox>
+            <Label fx:id="welcomText" text="" textFill="#f8f8f8" />
+         <Button fx:id="recommendationPage" mnemonicParsing="false" prefHeight="27.0" prefWidth="135.0" text="Recommendations" />
+            <Button fx:id="logout" mnemonicParsing="false" text="Log Out" visible="false" />
+            <Button fx:id="login" onMouseClicked="#loginPage" prefHeight="27.0" prefWidth="64.0" text="Login">
+                <HBox.margin>
+                    <Insets right="80.0" />
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </top>
+    <center>
+        <TilePane fx:id="productBox" prefHeight="500.0" BorderPane.alignment="CENTER">
+            <VBox styleClass="productBox">
+                <children>
+                    <ImageView fitHeight="200.0" fitWidth="150.0">
+                        <image>
+                            <Image url="@../img/img.jpg" />
+                        </image>
+                    </ImageView>
+                    <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+                    <HBox>
+                        <children>
+                            <Label text="Price:" />
+                            <Label text="30" />
+                        </children>
+                    </HBox>
+                    <Button text="Buy" />
+                </children>
+            </VBox>
+         <VBox layoutX="20.0" layoutY="20.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="220.0" layoutY="20.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="420.0" layoutY="20.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="620.0" layoutY="20.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="820.0" layoutY="20.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="20.0" layoutY="370.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="220.0" layoutY="370.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="420.0" layoutY="370.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+         <VBox layoutX="620.0" layoutY="370.0" styleClass="productBox">
+            <children>
+               <ImageView fitHeight="200.0" fitWidth="150.0">
+                  <image>
+                     <Image url="@../img/img.jpg" />
+                  </image>
+               </ImageView>
+               <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" wrapText="true" />
+               <HBox>
+                  <children>
+                     <Label text="Price:" />
+                     <Label text="30" />
+                  </children>
+               </HBox>
+               <Button text="Buy" />
+            </children>
+         </VBox>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </TilePane>
+    </center>
+   <right>
+      <VBox prefWidth="240.0" styleClass="RightBasketBox" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane nodeOrientation="LEFT_TO_RIGHT" styleClass="RightBasketTotal" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Total Price">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="9.15" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="22.0" prefWidth="220.0" styleClass="checkout" text="Checkout">
+                           <padding>
+                              <Insets bottom="8.0" top="8.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <VBox layoutX="10.0" layoutY="131.0" styleClass="RightBasketProduct">
+               <children>
+                  <GridPane alignment="CENTER" styleClass="RightBasketProductItemBox">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button text="+" />
+                           </children>
+                        </HBox>
+                        <TextField editable="false" styleClass="text-field" text="1" GridPane.rowIndex="1" />
+                        <HBox GridPane.rowIndex="2">
+                           <children>
+                              <Button text="-" textAlignment="CENTER" />
+                           </children>
+                        </HBox>
+                        <HBox GridPane.columnIndex="2">
+                           <children>
+                              <Button text="X" />
+                           </children>
+                        </HBox>
+                        <HBox styleClass="RightBasketProductItem" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                           <children>
+                              <ImageView fitHeight="70.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../img/img.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" />
+                           </children>
+                        </HBox>
+                        <HBox GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="9.15" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" layoutX="10.0" layoutY="10.0" styleClass="RightBasketProductItemBox">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button text="+" />
+                           </children>
+                        </HBox>
+                        <TextField editable="false" styleClass="text-field" text="1" GridPane.rowIndex="1" />
+                        <HBox GridPane.rowIndex="2">
+                           <children>
+                              <Button text="-" textAlignment="CENTER" />
+                           </children>
+                        </HBox>
+                        <HBox GridPane.columnIndex="2">
+                           <children>
+                              <Button text="X" />
+                           </children>
+                        </HBox>
+                        <HBox styleClass="RightBasketProductItem" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../img/img.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Levi's Men's 502 Regular Tapered Fit Jeans" />
+                           </children>
+                        </HBox>
+                        <HBox GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="9.15" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
